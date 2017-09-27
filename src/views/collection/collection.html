@@ -21,7 +21,7 @@
         <ion-icon *ngIf="item['@type'] == 'Collection'" name="filing" item-left></ion-icon>
         <h2 class="truncate">{{item.title | titlecase}}</h2>
         <p>{{item['@type']}}</p>
-        <ion-avatar item-end><img src="{{item['@id']}}/@@images/image/thumb" onError="this.src='../../assets/broken.png'"></ion-avatar>
+        <ion-avatar item-end><img src="{{item['@id']}}/@@images/image/thumb" onError="this.src='assets/broken.png'"></ion-avatar>
     </button>
   </a>
 </ion-list>
