@@ -27,11 +27,11 @@ export class OfflineService {
         console.log(data);
         const now = new Date().getTime();
         data.items
-          .filter((item) => {
-            // backend is GMT
-            const offset = new Date().getTimezoneOffset() * 60000;
-            return !lastRefreshAt || new Date(item.modified).getTime() > lastRefreshAt + offset;
-          })
+          // .filter((item) => {
+          //   // backend is GMT
+          //   const offset = new Date().getTimezoneOffset() * 60000;
+          //   return !lastRefreshAt || new Date(item.modified).getTime() > lastRefreshAt + offset;
+          // })
           .map((item) => {
             return item['@id']; //return only urls of all items
           })
