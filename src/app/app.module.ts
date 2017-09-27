@@ -103,7 +103,7 @@ const cloudSettings: CloudSettings = {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     {
       provide: 'CONFIGURATION', useValue: {
-        BACKEND_URL: 'http://angular-plone.herokuapp.com/Plone',
+        BACKEND_URL: 'https://cms.terralego.com/backend-pwa-demo',
       } 
     },
     { provide: Marker, useClass: TypeMarker },
